@@ -34,7 +34,7 @@
 
 ## 3. 요구사항 명세와 기능 명세
 
-<img src=".img/mindmap.png">
+<img src="./img/mindmap.png">
 <!-- - 메인페이지 O
     - 로그인 전
 - 로그인 페이지 O
