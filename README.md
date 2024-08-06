@@ -37,4 +37,4 @@
 <img src="./img/mindmap.png">
 
 ## 4. 개발일정 (WBS)
-<img src="./img/WBS.jpg">
+<img src="./img/WBS.JPG">
