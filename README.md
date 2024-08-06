@@ -21,19 +21,21 @@
 ### URL 구조(마이크로식)
 |app:accounts|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|
 |---|---|---|---|---|
-|login/|POST|로그인||---|
-|signup/|POST|회원가입||---|
-|user/main/|GET|구매자메인|✅|---|
-|seller/main/|GET|판매자메인|✅|---|
-|user/detail/|GET|상품상세정보||---|
-|seller/center/|GET|판매자센터|✅|---|
-|cart/|GET|장바구니|✅|---|
+|login/|POST|로그인|||
+|signup/|POST|회원가입|||
+|user/main/|GET|구매자메인|✅||
+|seller/main/|GET|판매자메인|✅||
+|user/detail/|GET|상품상세정보|||
+|seller/center/|GET|판매자센터|✅||
+|seller/register/|POST|판매자상품등록|✅||
+|cart/|GET|장바구니|✅||
 |payment/|POST|주문및결제|✅|✅|
 |status/|GET|페이지상태||✅|
 
 ## 3. 요구사항 명세와 기능 명세
 
-- 메인페이지 O
+<img src="./mindmap.png">
+<!-- - 메인페이지 O
     - 로그인 전
 - 로그인 페이지 O
 - 회원 가입 페이지(구매자,판매자) O
@@ -45,4 +47,4 @@
     - 판매자용 상품업로드 페이지 O
 - 장바구니 페이지 O
 - 주문/결제 페이지 O
-- 오류페이지(404에러) O
+- 오류페이지(404에러) O -->
