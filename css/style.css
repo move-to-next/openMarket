@@ -15,7 +15,7 @@ header::after{
     display: block;
 }
 main{
-    width: 100%;
+    width: 100vw;
 }
 
 /* -------------------------- 메인페이지 HEADER 영역 -------------------------- */
