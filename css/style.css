@@ -12,7 +12,159 @@ body{
 }
 header{
     width: 100%;
+    box-shadow: 0px 4px 5px rgb(0, 0, 0, 20%);
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
 }
 main{
     width: 100%;
+}
+
+/* -------------------------- 메인페이지 HEADER 영역 -------------------------- */
+header .header-width{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+.header-width .header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+}
+.header-left h1 a img{
+    width: 124px;
+    height: 38px
+}
+.header-left input{
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    padding: 10px 16px;
+    border: 2px solid #21BF48;
+    border-radius: 50px;
+}
+.header-left .header-search::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 7px 0 0 -35px;
+    background: url(../img/icon-search.svg);
+    background-size: cover;
+}
+.header-width .header-right{
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+.header-right ul{
+    width: 100%;
+}
+.header-right ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+.header-right ul li a p{
+    font-family: "spoqa han sans neo";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #000;
+    text-align: center;
+}
+.header-right ul li a img{
+    aspect-ratio: 1.6/1.1;
+}
+.header-right ul .user-cart{
+    width: 56px;
+    float: left;
+}
+.header-right ul .user-page{
+    width: 56px;
+    float: right;
+}
+/* -------------------------- 메인페이지 MAIN 롤링배너 영역 -------------------------- */
+main .main-top{
+    width: 100vw;
+    height: 46vh;
+}
+.main-top .rolling-banner{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.rolling-banner .rolling-left-arrow{
+    position: absolute;
+    top: 17vh;
+    left: 20px;
+    z-index: 6;
+}
+.rolling-banner .rolling-right-arrow{
+    position: absolute;
+    top: 17vh;
+    right: 20px;
+    z-index: 6;
+}
+.rolling-banner .rolling-banner-dot{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+    left: 48vw;
+    bottom: 20px;
+    margin: auto;
+    z-index: 6;
+}
+.rolling-banner-dot .dot{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+.rolling-banner-dot .dot_on{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+.rolling-banner .rolling-banner-img{
+    position: relative;
+    width: 100%;
+    height: 46vh;
+    z-index: 5;
+}
+.rolling-banner-img .banner{
+    display: block;
+    width: 100%;
+    height: 46vh;
+    background-color: #f2f2f2;
+}
+/* -------------------------- 메인페이지 MAIN 제품리스트 영역 -------------------------- */
+main .main-bottom{
+    width: 100%;
+    height: 70vh;
+    margin: 80px auto;
+}
+.main-bottom .product-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    background-color: rosybrown;
 }
