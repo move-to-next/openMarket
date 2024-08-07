@@ -1,0 +1,212 @@
+main{
+    width:100%;
+}
+main .login-width{
+    width: 550px;
+    height: 0;
+    padding-top: 10vh;
+    margin: auto;
+}
+.login-width h1{
+    width: 100%;
+}
+.login-width h1 .login-logo{
+    width: 238px;
+    display: block;
+    margin: auto;
+}
+.login-width h1 .login-logo img{
+    width: 238px;
+    width: fit-content;
+    margin: auto;
+}
+.login-width .login-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 482px;
+    margin: auto;
+}
+/* ---------------------- 사용자 로그인 ---------------------- */
+.login-box .login-user{
+    position: absolute;
+    width: 550px;
+    margin: 70px 0 36px;
+    /* display: none; */
+}
+.login-user .login-user-top{
+    position: relative;
+    width: 50%;
+    padding: 20px 76px;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #ffffff;
+    z-index: 9;
+}
+.login-user .login-seller-top-back{
+    position: absolute;
+    width: 50%;
+    height: 68px;
+    padding: 20px 76px;
+    margin-left: 50%;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #f4f4f4;
+    z-index:5;
+    cursor: pointer;
+}
+.login-user .login-seller-top-back span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.login-user .login-user-top span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.login-user .login-user-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 35px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    background-color: #fff;
+    z-index:8;
+}
+.login-user .login-user-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid;
+}
+.login-user .login-user-box button{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #ffffff;
+    width: 100%;
+    padding: 19px 0;
+    margin-top: 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+/* ---------------------- 판매자 로그인 ---------------------- */
+.login-box .login-seller{
+    position: absolute;
+    width: 550px;
+    margin: 70px 0;
+    display: none;
+}
+.login-seller .login-seller-top{
+    position: relative;
+    width: 50%;
+    padding: 20px 76px;
+    margin-left: 50%;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #ffffff;
+    z-index: 9;
+}
+.login-seller .login-user-top-back{
+    position: absolute;
+    width: 50%;
+    height: 68px;
+    padding: 20px 76px;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #f4f4f4;
+    z-index: 5;
+    cursor: pointer;
+}
+.login-seller .login-user-top-back span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.login-seller .login-seller-top span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.login-seller .login-seller-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 36px 35px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    background-color: #fff;
+    z-index:8;
+}
+.login-seller .login-seller-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    padding: 20px 0;
+    border: none;
+    border-bottom: 1px solid;
+}
+.login-seller .login-seller-box button{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #ffffff;
+    width: 100%;
+    padding: 19px 0;
+    margin-top: 36px;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+
+.login-width .login-help{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 32%;
+    margin: auto;
+    bottom: 0;
+}
+.login-width .login-help a{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000000;
+}
