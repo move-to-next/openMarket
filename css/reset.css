@@ -55,3 +55,7 @@ table {
 	height:1px;
 	overflow:hidden;
 }
+input{
+	outline: none;
+	box-sizing: border-box;
+}

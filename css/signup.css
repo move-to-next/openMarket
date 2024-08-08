@@ -1,0 +1,591 @@
+main{
+    width:100%;
+}
+main .signup-width{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 100vh;
+    margin: auto;
+    padding: 70px 0;
+}
+.signup-width h1{
+    width: 100%;
+}
+.signup-width h1 .signup-logo{
+    width: 238px;
+    display: block;
+    margin: auto;
+}
+.signup-width h1 .signup-logo img{
+    width: fit-content;
+    margin: auto;
+}
+.signup-width .signup-box{
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+/* -------------------------------- 사용자 로그인 -------------------------------- */
+.signup-box .signup-user{
+    position: relative;
+    width: 550px;
+    margin: 70px 0 70px;
+    display: none;
+}
+/* ---------------------- 상단 회원가입 선택 ---------------------- */
+.signup-user .signup-user-top{
+    position: relative;
+    width: 50%;
+    padding: 20px 76px;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 9;
+}
+.signup-user .signup-seller-top-back{
+    position: absolute;
+    width: 50%;
+    height: 68px;
+    padding: 20px 76px;
+    margin-left: 50%;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #f4f4f4;
+    text-align: center;
+    z-index:5;
+    cursor: pointer;
+}
+.signup-user .signup-seller-top-back span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.signup-user .signup-user-top span{
+    display: inline-block;
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+/* ---------------------- 중간 아이디 및 비밀번호 ---------------------- */
+.signup-user .signup-user-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 35px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    background-color: #fff;
+    z-index:8;
+}
+.signup-user .signup-user-box p{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 10px;
+    border-radius: 5px;
+}
+/* ------------- 아이디 및 중복확인 ------------- */
+.signup-user-box .signup-id-prove{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-user-box .signup-id-prove .signup-id-prove-box{
+    width: 72%;
+    padding: 15px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-user-box .signup-id-prove input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border: none;
+}
+.signup-user-box .signup-id-prove button{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #ffffff;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+/* ------------- 비밀번호 ------------- */
+.signup-user-box .signup-pw-prove{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-user-box .signup-pw-prove .signup-pw-prove-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-user-box .signup-pw-prove input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 95%;
+    border: none;
+}
+/* ------------- 비밀번호 재확인 ------------- */
+.signup-user-box .signup-pw-prove-again{
+    width: 100%;
+}
+.signup-user-box .signup-pw-prove-again .signup-pw-prove-again-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-user-box .signup-pw-prove-again input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 95%;
+    border: none;
+}
+/* ---------------------- 하단 사용자 정보 ---------------------- */
+.signup-user .signup-user-box>div:last-child{
+    margin-top:50px;
+}
+.signup-user-box>div:last-child .signup-name-prove{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-name-prove .signup-name-prove-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-name-prove .signup-name-prove-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 20px;
+    width: 100%;
+    border: none;
+}
+.signup-user-box>div:last-child .signup-phone-prove{
+    width: 100%;
+}
+.signup-phone-prove .signup-phone-prove-box{
+    display: flex;
+    justify-content: space-between;
+}
+.signup-phone-prove-box .signup-phone-first{
+    position: relative;
+    width: 30%;
+}
+.signup-phone-first .signup-phone-text{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 21px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+.signup-phone-text .signup-phone-text-save{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.signup-phone-first .signup-phone-text img{
+    margin-right: 10px;
+}
+.signup-phone-first .signup-phone-select{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    margin-top: 6px;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+.signup-phone-first .signup-phone-select ul li{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+.signup-phone-prove-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 30%;
+    padding: 20px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* -------------------------------- 판매자 로그인 -------------------------------- */
+.signup-box .signup-seller{
+    position: relative;
+    width: 550px;
+    margin: 70px 0 70px;
+    /* display: none; */
+}
+/* ---------------------- 상단 회원가입 선택 ---------------------- */
+.signup-seller .signup-seller-top{
+    position: relative;
+    width: 50%;
+    padding: 20px 76px;
+    margin-left: 50%;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #ffffff;
+    text-align: center;
+    z-index: 9;
+}
+.signup-seller .signup-seller-top span{
+    display: inline-block;
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.signup-seller .signup-user-top-back{
+    position: absolute;
+    width: 50%;
+    height: 68px;
+    padding: 20px 76px;
+    top: 1.5px;
+    border: 1px solid #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: none;
+    background-color: #f4f4f4;
+    text-align: center;
+    z-index:5;
+    cursor: pointer;
+}
+.signup-seller .signup-user-top-back span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+}
+/* ---------------------- 중간 아이디 및 비밀번호 ---------------------- */
+.signup-seller .signup-seller-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px 35px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    background-color: #fff;
+    z-index:8;
+}
+.signup-seller .signup-seller-box p{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 10px;
+    border-radius: 5px;
+}
+/* ------------- 아이디 및 중복확인 ------------- */
+.signup-seller-box .signup-id-prove{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-seller-box .signup-id-prove .signup-id-prove-box{
+    width: 72%;
+    padding: 15px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-seller-box .signup-id-prove input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border: none;
+}
+.signup-seller-box .signup-id-prove button{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #ffffff;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+/* ------------- 비밀번호 ------------- */
+.signup-seller-box .signup-pw-prove{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-seller-box .signup-pw-prove .signup-pw-prove-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-seller-box .signup-pw-prove input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 95%;
+    border: none;
+}
+/* ------------- 비밀번호 재확인 ------------- */
+.signup-seller-box .signup-pw-prove-again{
+    width: 100%;
+}
+.signup-seller-box .signup-pw-prove-again .signup-pw-prove-again-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-seller-box .signup-pw-prove-again input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 95%;
+    border: none;
+}
+/* ---------------------- 중간 사용자 정보 ---------------------- */
+.signup-seller .signup-seller-box>div:nth-child(2){
+    margin-top:50px;
+}
+.signup-seller-box>div:nth-child(2) .signup-name-prove{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-name-prove .signup-name-prove-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-name-prove .signup-name-prove-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    width: 100%;
+    border: none;
+}
+.signup-user-box>div:nth-child(2) .signup-phone-prove{
+    width: 100%;
+}
+.signup-phone-prove .signup-phone-prove-box{
+    display: flex;
+    justify-content: space-between;
+}
+.signup-phone-prove-box .signup-phone-first{
+    position: relative;
+    width: 30%;
+}
+.signup-phone-first .signup-phone-text{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+.signup-phone-text .signup-phone-text-save{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    display: inline-block;
+    width: 100%;
+}
+.signup-phone-first .signup-phone-text img{
+    margin-right: 10px;
+}
+.signup-phone-first .signup-phone-select{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    margin-top: 6px;
+    background-color: #ffffff;
+    padding: 20px;
+    overflow: auto;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+    display: none;
+}
+.signup-phone-first .signup-phone-select ul li{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    padding: 10px;
+}
+.signup-phone-prove-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 30%;
+    padding: 15px 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-align: center;
+}
+/* ---------------------- 하단 사업자 정보 ---------------------- */
+.signup-seller .signup-seller-box>div:last-child{
+    margin-top:50px;
+}
+.signup-seller-box>div:last-child .signup-owner-prove{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-seller-box>div:last-child .signup-owner-prove .signup-owner-prove-box{
+    width: 72%;
+    padding: 15px 16px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-seller-box>div:last-child .signup-owner-prove input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    border: none;
+}
+.signup-seller-box>div:last-child .signup-owner-prove button{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #ffffff;
+    width: 25%;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+.signup-seller-box>div:last-child .signup-store-prove{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.signup-store-prove .signup-store-prove-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+.signup-store-prove .signup-store-prove-box input{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    width: 100%;
+    border: none;
+}
+/* -------------------- 약관동의 및 가입하기 -------------------- */
+.signup-user .signup-help{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    text-align: center;
+}
+.signup-seller .signup-help{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    bottom: 0;
+    text-align: center;
+}
+.signup-box .signup-help a{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000000;
+}
+.signup-help form{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 34px;
+    text-align: left;
+}
+.signup-help form input{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    border: 1px solid #21BF48;
+}
+.signup-help form label{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    line-height: 22px;
+}
+.signup-help form label span{
+    font-weight: 700;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.signup-help .signup-btn{
+    width: 100%;
+    padding: 19px 0;
+    margin-top: 34px;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+.signup-help .signup-btn span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #ffffff;
+}
