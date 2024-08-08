@@ -32,7 +32,7 @@
 |payment/|POST|주문및결제|✅|✅|
 |status/|GET|페이지상태||✅|
 
-## 3. 요구사항 명세와 기능명세
+## 3. 요구사항 명세와 기능 명세
 
 <img src="./img/mindmap.png">
 
