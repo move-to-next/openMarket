@@ -567,6 +567,7 @@ main .signup-width{
     font-family: "spoqa han sans neo";
     font-size: 18px;
     line-height: 22px;
+    user-select: none;
 }
 .signup-help form label span{
     font-weight: 700;
