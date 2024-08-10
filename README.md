@@ -25,7 +25,7 @@
 |signup/|POST|회원가입|||
 |user/main/|GET|구매자메인|✅||
 |seller/main/|GET|판매자메인|✅||
-|user/detail/|GET|상품상세정보|||
+|details/|GET|상품상세정보|||
 |seller/center/|GET|판매자센터|✅||
 |seller/register/|POST|판매자상품등록|✅||
 |cart/|GET|장바구니|✅||
