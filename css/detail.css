@@ -1,0 +1,317 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    box-shadow: 0px 4px 5px rgb(0, 0, 0, 20%);
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+}
+main{
+    width: 100vw;
+    padding: 50px 0;
+}
+
+/* -------------------------- 메인페이지 HEADER 영역 -------------------------- */
+header .header-width{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+.header-width .header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+}
+.header-left h1 a img{
+    width: 124px;
+    height: 38px
+}
+.header-left input{
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    padding: 10px 16px;
+    border: 2px solid #21BF48;
+    border-radius: 50px;
+}
+.header-left .header-search::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 7px 0 0 -35px;
+    background: url(../img/icon-search.svg);
+    background-size: cover;
+}
+.header-width .header-right{
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+.header-right ul{
+    width: 100%;
+}
+.header-right ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+.header-right ul li a p{
+    font-family: "spoqa han sans neo";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #000;
+    text-align: center;
+}
+.header-right ul li a img{
+    aspect-ratio: 1.6/1.1;
+}
+.header-right ul .user-cart{
+    width: 56px;
+    float: left;
+}
+.header-right ul .user-page{
+    width: 56px;
+    float: right;
+}
+/* -------------------------- 메인페이지 MAIN 상품소개 영역 -------------------------- */
+main .product-top{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin:auto;
+}
+.product-top .product-img{
+    position: relative;
+    width: 45%;
+    height: inherit;
+}
+.product-top .product-img img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.product-top .product-info{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 53%;
+    height: inherit;
+}
+
+.product-info .product-info-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25%;
+}
+.product-info-top .product-category{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #767676;
+}
+.product-info-top .product-name{
+    font-family: "spoqa han sans neo";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #000000;
+}
+.product-info-top .product-price{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #000000;
+}
+.product-info-top .product-price strong{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.product-info .product-info-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 48%;
+}
+.product-info-bottom .product-delevery{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.product-info-bottom .product-count{
+    width: 100%;
+}
+.product-info-bottom .product-count::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.product-info-bottom .product-count::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.product-count .product-count-btn{
+    display: flex;
+    padding: 20px 0;
+}
+.product-count-btn .product-count-btn-minus{
+    width: 30px;
+    height: 30px;
+    border:1px solid #c4c4c4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color:#fff;
+    cursor: pointer;
+    z-index: 2;
+}
+.product-count-btn .product-count-btn-plus{
+    width: 30px;
+    height: 30px;
+    border:1px solid #c4c4c4;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color:#fff;
+    cursor: pointer;
+    z-index: 2;
+}
+.product-count-btn .product-count-num{
+    width: 30px;
+    height: 30px;
+    padding: 5px 0;
+    text-align: center;
+    border:1px solid #c4c4c4;
+    border-left: none;
+    border-right: none;
+    background-color:#fff;
+    z-index: 3;
+}
+
+.product-info-bottom .product-total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-total .product-total-text{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+}
+.product-total .product-total-price{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+}
+.product-total .product-total-price span{
+    display: inline-block;
+    margin-left:20px;
+}
+.product-total .product-total-price span b{
+    color: #21BF48;
+}
+.product-total .product-total-price span:nth-child(2){
+    color: #c4c4c4;
+}
+.product-total .product-total-price span strong{
+    font-size: 36px;
+    font-weight: 700;
+    color: #21BF48;
+}
+
+.product-info-bottom .product-buy{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.product-buy button span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #ffffff;
+}
+.product-buy .product-buy-list{
+    border: none;
+    border-radius: 5px;
+    padding: 19px 10vw;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+.product-buy .product-cart-list{
+    border: none;
+    border-radius: 5px;
+    padding: 19px 3.5vw;
+    cursor: pointer;
+    background-color: #787878;
+}
+
+main .product-bottom{
+    position: relative;
+    width: 70vw;
+    margin:50px auto 0;
+}
+.product-bottom ul{
+    display: flex;
+    width: 100%;
+}
+.product-bottom ul li{
+    width: 25%;
+    text-align: center;
+    cursor: pointer;
+}
+.product-bottom ul li::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #E0E0E0;
+}
+.product-bottom ul li p{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    color: #767676;
+    padding: 20px 0;
+}
+.product-bottom ul .li-btn p{
+    font-weight: 700;
+    color: #21BF48;
+}
+.product-bottom ul .li-btn::after{
+    background-color: #21BF48;
+}
+.product-bottom .product-detail{
+    position: relative;
+    width: 100%;
+    margin-top: 50px;
+} 
+.product-detail img{
+    position: relative;
+    width: 100%;
+}

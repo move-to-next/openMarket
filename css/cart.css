@@ -1,0 +1,159 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    box-shadow: 0px 4px 5px rgb(0, 0, 0, 20%);
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+}
+main{
+    width: 100vw;
+    padding: 50px 0;
+}
+
+/* -------------------------- 장바구니페이지 HEADER 영역 -------------------------- */
+header .header-width{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+.header-width .header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+}
+.header-left h1 a img{
+    width: 124px;
+    height: 38px
+}
+.header-left input{
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    padding: 10px 16px;
+    border: 2px solid #21BF48;
+    border-radius: 50px;
+}
+.header-left .header-search::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 7px 0 0 -35px;
+    background: url(../img/icon-search.svg);
+    background-size: cover;
+}
+.header-width .header-right{
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+.header-right ul{
+    width: 100%;
+}
+.header-right ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+.header-right ul li a p{
+    font-family: "spoqa han sans neo";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #000;
+    text-align: center;
+}
+.header-right ul li a img{
+    aspect-ratio: 1.6/1.1;
+}
+.header-right ul .user-cart{
+    width: 56px;
+    float: left;
+}
+.header-right ul .user-cart p{
+    color: #21BF48;
+}
+.header-right ul .user-page{
+    width: 56px;
+    float: right;
+}
+/* ------------------------- 장바구니페이지 MAIN 영역 ------------------------- */
+main .cart-top{
+    width: 70vw;
+    margin: auto;
+}
+.cart-top .cart-top-text{
+    width: 100%;
+    font-family: "spoqa han sans neo";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+}
+.cart-top .cart-top-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 52px;
+    padding: 19px 0;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.cart-top .cart-top-list div{
+    width: 35%;
+    height: 100%;
+    padding: 0 20px;
+}
+.cart-top .cart-top-list>div:first-child{
+    width: 10%;
+    padding: 0 20px;
+}
+.cart-top .cart-top-list>div:last-child{
+    width: 20%;
+    padding: 0 20px;
+}
+.cart-top .cart-top-list div span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+main .cart-bottom{
+    width: 70vw;
+    margin: auto;
+    padding:20vh 0;
+}
+main .cart-bottom p{
+    width: 100%;
+    text-align: center;
+}
+main .cart-bottom .cart-bottom-head{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+}
+main .cart-bottom .cart-bottom-text{
+    font-family: "spoqa han sans neo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    margin-top:17px;
+}

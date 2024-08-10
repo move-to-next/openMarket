@@ -1,0 +1,655 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    box-shadow: 0px 4px 5px rgb(0, 0, 0, 20%);
+}
+header::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    display: block;
+}
+main{
+    width: 100vw;
+    padding: 50px 0;
+}
+
+/* -------------------------- 메인페이지 HEADER 영역 -------------------------- */
+header .header-width{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    height: 10vh;
+    margin: auto;
+}
+.header-width .header-left{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 460px;
+}
+.header-left h1 a img{
+    width: 124px;
+    height: 38px
+}
+.header-left input{
+    position: relative;
+    display: inline-block;
+    width: 260px;
+    padding: 10px 16px;
+    border: 2px solid #21BF48;
+    border-radius: 50px;
+}
+.header-left .header-search::after{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin: 7px 0 0 -35px;
+    background: url(../img/icon-search.svg);
+    background-size: cover;
+}
+.header-width .header-right{
+    display: flex;
+    align-items: center;
+    width: 130px;
+}
+.header-right ul{
+    width: 100%;
+}
+.header-right ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+.header-right ul li a p{
+    font-family: "spoqa han sans neo";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #000;
+    text-align: center;
+}
+.header-right ul li a img{
+    aspect-ratio: 1.6/1.1;
+}
+.header-right ul .user-cart{
+    width: 56px;
+    float: left;
+}
+.header-right ul .user-page{
+    width: 56px;
+    float: right;
+}
+
+/* ------------------------- 장바구니페이지 MAIN 영역 ------------------------- */
+main .payment-top{
+    width: 70vw;
+    margin: auto;
+}
+.payment-top .payment-top-text{
+    width: 100%;
+    font-family: "spoqa han sans neo";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+}
+.payment-top .payment-top-list{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 52px;
+    padding: 19px 0;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+.payment-top .payment-top-list div{
+    width: 15%;
+    height: 100%;
+    padding: 0 20px;
+}
+.payment-top .payment-top-list>div:first-child{
+    width: 50%;
+    padding: 0 20px;
+}
+.payment-top .payment-top-list div span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.payment-top .payment-top-product{
+    width: 100%;
+}
+.payment-top .payment-top-product>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #ffffff;
+}
+.payment-top .payment-top-product>div::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-top-product .product-item{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+    width: 50%;
+    padding: 15px;
+}
+.payment-top-product .product-item img{
+    width: 104px;
+    height: 104px;
+    border-radius: 10px;
+}
+.product-item .product-item-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 75%;
+    height: 70%;
+}
+.product-item-text .product-item-category{
+    font-family: "spoqa han sans neo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color:#767676;
+}
+.product-item-text .product-item-name{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color:#000000;
+    margin-bottom: 10px;
+}
+.product-item-text .product-item-value{
+    font-family: "spoqa han sans neo";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color:#767676;
+}
+.payment-top-product>div .product-sale{
+    display: inline-block;
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #767676;
+    vertical-align: middle;
+    width: 15%;
+    padding: 58px 0;
+    text-align: center;
+}
+.payment-top-product>div .product-cost{
+    display: inline-block;
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #767676;
+    vertical-align: middle;
+    width: 15%;
+    padding: 58px 0;
+    text-align: center;
+}
+.payment-top-product>div .product-bill{
+    display: inline-block;
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #000000;
+    vertical-align: middle;
+    width: 15%;
+    padding: 58px 0;
+    text-align: center;
+}
+
+.payment-top .payment-total{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 70vw;
+    padding: 20px 0;
+}
+.payment-top .payment-total span{
+    display: inline-block;
+}
+.payment-total .payment-total-text{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000000;
+    margin-right: 10px;
+}
+.payment-total .payment-total-price{
+    font-family: "spoqa han sans neo";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #EB5757;
+}
+
+main .payment-middle{
+    width: 70vw;
+    margin: auto;
+}
+.payment-middle .payment-info{
+    width: 100%;
+}
+.payment-middle .payment-info h3{
+    display: block;
+    padding: 20px 0;
+    font-family: "spoqa han sans neo";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+}
+.payment-middle .payment-info::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c4c4c4;
+}
+
+.payment-middle .payment-user-info{
+    width: 70vw;
+}
+.payment-user-info .user-info-title{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000000;
+}
+.payment-user-info .user-info-title span{
+    display: block;
+    padding: 20px 0;
+}
+.payment-user-info .user-info-title::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c4c4c4;
+}
+.payment-middle .payment-user-info form{
+    width: 100%;
+}
+.payment-user-info .user-info-name{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-info .user-info-name::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-info .user-info-name span:first-child{
+    display: inline-block;
+    width: 10vw;
+}
+.payment-user-info .user-info-name input{
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+}
+.payment-user-info .user-info-phone{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-info .user-info-phone::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-info .user-info-phone span:first-child{
+    display: inline-block;
+    width: 10vw;
+}
+.payment-user-info .user-info-phone input{
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+}
+.payment-user-info .user-info-email{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-info .user-info-email::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-info .user-info-email span:first-child{
+    display: inline-block;
+    width: 10vw;
+}
+.payment-user-info .user-info-email input{
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+}
+.payment-user-info .user-info-name input{
+    width: 20vw;
+}
+.payment-user-info .user-info-phone input{
+    width: 6vw;
+}
+.payment-user-info .user-info-email input{
+    width: 20vw;
+}
+
+.payment-middle .payment-user-place{
+    width: 70vw;
+}
+.payment-middle .payment-user-place form{
+    width: 100%;
+}
+.payment-user-place .user-place-title{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #000000;
+}
+.payment-user-place .user-place-title span{
+    display: block;
+    padding: 20px 0;
+}
+.payment-user-place .user-place-title::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c4c4c4;
+}
+.payment-user-place .user-place-name{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-place .user-place-name::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-place .user-place-name span:first-child{
+    display: inline-block;
+    width: 10vw;
+}
+.payment-user-place .user-place-name input{
+    width: 20vw;
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+}
+.payment-user-place .user-place-phone{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-place .user-place-phone::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-place .user-place-phone span:first-child{
+    display: inline-block;
+    width: 10vw;
+}
+.payment-user-place .user-place-phone input{
+    width: 6vw;
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+}
+.payment-user-place .user-place-here{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-place .user-place-here::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-place .user-place-here span:first-child{
+    display: inline-block;
+    width: 10.2vw;
+}
+.payment-user-place .user-place-here input{
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+}
+.user-place-here .user-place-here-home{
+    display: flex;
+    align-items: center;
+}
+.user-place-here-home .user-place-here-home-num{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+}
+.user-place-here-home .user-place-here-home-num input{
+    width: 11vw;
+}
+.user-place-here-home .user-place-here-home-num button{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #ffffff;
+    width: 8vw;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #21BF48;
+    cursor: pointer;
+}
+.user-place-here .user-place-here-sub{
+    width: 70%;
+    margin-left: 10.2vw;
+}
+.user-place-here .user-place-here-sub input{
+    width: 50vw;
+    margin-top: 0;
+}
+.payment-user-place .user-place-message{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-user-place .user-place-message::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #c4c4c4;
+}
+.payment-user-place .user-place-message span:first-child{
+    display: inline-block;
+    width: 10vw;
+}
+.payment-user-place .user-place-message input{
+    width: 50vw;
+    margin: 8px 0;
+    padding: 10px 12px;
+    border: 1px solid #c4c4c4;
+}
+
+main .payment-bottom{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 50px auto;
+}
+.payment-bottom .payment-user-credit{
+    width: 35vw;
+}
+.payment-bottom .payment-user-credit::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #c4c4c4
+}
+.payment-user-credit .payment-user-credit-title{
+    width: 100%;
+}
+.payment-bottom .payment-user-credit h3{
+    display: block;
+    padding: 20px 0;
+    font-family: "spoqa han sans neo";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+}
+.payment-bottom .payment-user-credit h3::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-top: 20px;
+    background-color: #c4c4c4;
+}
+.payment-bottom .payment-user-credit form{
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 93%;
+    padding: 18px 7px;
+}
+.payment-bottom .payment-user-credit form p span{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.payment-bottom .payment-user-total{
+    width: 32vw;
+}
+.payment-bottom .payment-user-total h3{
+    display: block;
+    padding: 20px 0;
+    font-family: "spoqa han sans neo";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #000000;
+}
+
+.payment-user-total .payment-user-total-box{
+    width: 100%;
+    border: 2px solid #21BF48;
+    border-radius: 10px;
+}
+.payment-user-total-box .payment-user-total-top{
+    background-color: #ffffff;
+    padding: 24px 30px 0;
+    border-radius: 10px 10px 0 0;
+}
+.payment-user-total-box .payment-user-total-top div{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.payment-user-total-top .user-total-info{
+    padding-top: 10px;
+}
+.payment-user-total-top .user-total-info::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 4px;
+    background-color: #c4c4c4;
+}
+.payment-user-total-top .user-total-price{
+    padding: 29px 0 15px;
+}
+
+.payment-user-total-box .payment-user-total-bottom{
+    position: relative;
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 34px 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+.payment-user-total-bottom .user-total-agree{
+    padding-bottom: 30px;
+}
+.payment-user-total-bottom .user-total-agree label{
+    font-family: "spoqa han sans neo";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    user-select: none;
+}
+.payment-user-total-bottom .payment-pay{
+    display: block;
+    position: relative;
+    margin: auto;
+    padding: 19px 66px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c4c4c4;
+    cursor: pointer;
+}
+.payment-user-total-bottom .payment-pay span{
+    font-family: "spoqa han sans neo";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #ffffff;
+}
