@@ -59,7 +59,14 @@ header .header-width{
     align-items: center;
     width: 130px;
 }
+.header-width .header-seller-right{
+    display: flex;
+    align-items: center;
+    width: 240px;
+}
 .header-right ul{
+    display: flex;
+    align-items: center;
     width: 100%;
 }
 .header-right ul li a{
@@ -87,6 +94,53 @@ header .header-width{
 .header-right ul .user-page{
     width: 56px;
     float: right;
+}
+
+.header-seller-right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.header-seller-right ul li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+}
+.header-seller-right ul li a p{
+    font-family: "spoqa han sans neo";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -1px;
+    color: #000;
+    text-align: center;
+}
+.header-seller-right ul li a img{
+    aspect-ratio: 1.6/1.1;
+}
+.header-seller-right ul .seller-page{
+    width: 56px;
+    float: left;
+}
+.header-seller-right ul .seller-btn{
+    width: 168px;
+    float: right;
+}
+.header-seller-right ul .seller-btn div{
+    display: flex;
+    align-items: center;
+    width: 168px;
+    padding: 11px 20px;
+    border-radius: 5px;
+    background-color: #21BF48;
+}
+.header-seller-right ul .seller-btn div span{
+    font-family: "spoqa han sans neo";
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
 }
 /* -------------------------- 메인페이지 MAIN 롤링배너 영역 -------------------------- */
 main .main-top{
