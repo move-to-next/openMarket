@@ -16,7 +16,7 @@
 - github (서비스 배포 환경)
 
 ### 2.2 배포 URL
-- (나중에 추가 예정)
+- https://move-to-next.github.io/openMarket/html/openMarket.html
 
 ### URL 구조(마이크로식)
 |app:accounts|HTTP Method|설명|로그인 권한 필요|작성자 권한 필요|
