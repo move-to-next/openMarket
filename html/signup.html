@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입페이지</title>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+  </head>
+  <body>
+    <main>
+        <article class="signup-width">
+            <h1>
+              <a href="#" class="signup-logo">
+                <img src="../img/Logo-hodu.png" alt="로고아이콘">
+                <span class="sr-only">로고</span>
+              </a>
+            </h1>
+            <section class="signup-box">
+              <div class="signup-user">
+                <div class="signup-user-top"><span>구매회원가입</span></div>
+                <div class="signup-seller-top-back"><span>판매회원가입</span></div>
+                <form class="signup-user-box">
+                  <div>
+                    <p>아이디</p>
+                    <div class="signup-id-prove">
+                    <div class="signup-id-prove-box">
+                      <input type="text">
+                    </div>
+                    <button type="submit" class="signup-id-prove-btn">중복확인</button>
+                    </div>
+                    <p>비밀번호</p>
+                    <div class="signup-pw-prove">
+                      <div class="signup-pw-prove-box">
+                        <input type="password">
+                        <img src="../img/icon-check-off.svg">
+                      </div>
+                    </div>
+                    <p>비밀번호 재확인</p>
+                    <div class="signup-pw-prove-again">
+                      <div class="signup-pw-prove-again-box">
+                        <input type="password">
+                        <img src="../img/icon-check-off.svg">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>이름</p>
+                    <div class="signup-name-prove">
+                      <div class="signup-name-prove-box">
+                        <input type="text">
+                      </div>
+                    </div>
+                    <p>휴대폰번호</p>
+                    <div class="signup-phone-prove">
+                      <div class="signup-phone-prove-box">
+                        <div class="signup-phone-first">
+                          <div class="signup-phone-text">
+                            <span class="signup-phone-text-save">010</span>
+                            <img src="../img/icon-up-arrow.svg">
+                          </div>
+                          <div class="signup-phone-select">
+                            <ul>
+                              <li>010</li>
+                              <li>012</li>
+                              <li>016</li>
+                              <li>017</li>
+                              <li>019</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <input type="text">
+                        <input type="text">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="signup-help">
+                  <form>
+                    <input type="checkbox" id="user-agree">
+                    <label for="user-agree">호두샵의 <span>이용약관</span> 및 <span>개인정보처리방침</span>에 대한 내용을 확인하였고 동의합니다.</label>
+                  </form>
+                  <button type="submit" class="signup-btn"><span>가입하기</span></button>
+                </div>
+              </div>
+              <div class="signup-seller">
+                <div class="signup-seller-top"><span>판매회원가입</span></div>
+                <div class="signup-user-top-back"><span>구매회원가입</span></div>
+                <form class="signup-seller-box">
+                  <div>
+                    <p>아이디</p>
+                    <div class="signup-id-prove">
+                    <div class="signup-id-prove-box">
+                      <input type="text">
+                    </div>
+                    <button type="submit" class="signup-id-prove-btn">중복확인</button>
+                    </div>
+                    <p>비밀번호</p>
+                    <div class="signup-pw-prove">
+                      <div class="signup-pw-prove-box">
+                      <input type="password">
+                      <img src="../img/icon-check-off.svg">
+                      </div>
+                    </div>
+                    <p>비밀번호 재확인</p>
+                    <div class="signup-pw-prove-again">
+                    <div class="signup-pw-prove-again-box">
+                      <input type="password">
+                      <img src="../img/icon-check-off.svg">
+                    </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>이름</p>
+                    <div class="signup-name-prove">
+                      <div class="signup-name-prove-box">
+                        <input type="text">
+                      </div>
+                    </div>
+                    <p>휴대폰번호</p>
+                    <div class="signup-phone-prove">
+                      <div class="signup-phone-prove-box">
+                        <div class="signup-phone-first">
+                          <div class="signup-phone-text">
+                            <span class="signup-phone-text-save">010</span>
+                            <img src="../img/icon-up-arrow.svg">
+                          </div>
+                          <div class="signup-phone-select">
+                            <ul>
+                              <li>010</li>
+                              <li>012</li>
+                              <li>016</li>
+                              <li>017</li>
+                              <li>019</li>
+                            </ul>
+                          </div>
+                        </div>
+                        <input type="text">
+                        <input type="text">
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>사업자 등록번호</p>
+                    <div class="signup-owner-prove">
+                      <div class="signup-owner-prove-box">
+                        <input type="text">
+                      </div>
+                      <button type="submit" class="signup-id-prove-btn">인증</button>
+                    </div>
+                    <p>스토어 이름</p>
+                    <div class="signup-store-prove">
+                      <div class="signup-store-prove-box">
+                        <input type="text">
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="signup-help">
+                  <form>
+                    <input type="checkbox" id="seller-agree">
+                    <label for="seller-agree">호두샵의 <span>이용약관</span> 및 <span>개인정보처리방침</span>에 대한 내용을 확인하였고 동의합니다.</label>
+                  </form>
+                  <button type="submit" class="signup-btn"><span>가입하기</span></button>
+                </div>
+              </div>
+            </section>
+        </article>
+    </main>
+  </body>
+</html>

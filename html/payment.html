@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>결제페이지</title>
+    <link rel="stylesheet" href="../css/payment.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/font.css">
+  </head>
+  <body>
+    <!-- HEADER 영역 -->
+    <header>
+        <section class="header-width">
+            <div class="header-left">
+                <h1><a href="#"><img src="../img/Logo-hodu.png" alt="쇼핑몰로고"><span class="sr-only">로고</span></a></h1>
+                <div class="header-search"><input type="text" placeholder="검색어를 입력하세요"></div>
+            </div>
+            <nav class="header-right">
+                <ul>
+                    <li class="user-cart"><a href="#"><img src="../img/icon-shopping-cart.svg" alt="장바구니 아이콘"><p>장바구니</p></a></li>
+                    <li class="user-page"><a href="#"><img src="../img/icon-user.svg" alt="마이페이지 아이콘"><p>로그인</p></a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <!-- MAIN 영역 -->
+    <main>
+        <article class="payment-top">
+            <h2 class="payment-top-text">주문/결제하기</h2>
+            <section>
+                <h3 class="sr-only">주문하고자 하는 제품리스트</h3>
+                <div class="payment-top-list">
+                <div><span>상품정보</span></div>
+                <div><span>할인</span></div>
+                <div><span>배송비</span></div>
+                <div><span>주문금액</span></div>
+                </div>
+                <section class="payment-top-product">
+                <div class="product1">
+                    <div class="product-item">
+                        <img src="https://openmarket.weniv.co.kr/media/products/2024/06/28/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2024-06-28_%E1%84%8B%E1%85%A9%E1%84%8C%E1%85%A5%E1%86%AB_10.46.48.png" alt="">
+                        <div class="product-item-text">
+                            <p class="product-item-category">백엔드글로벌</p>
+                            <p class="product-item-name">딥러닝 개발자 무릎 담요</p>
+                            <p class="product-item-value">수량: 1개</p>
+                        </div>
+                    </div>
+                    <p class="product-sale">-</p>
+                    <p class="product-cost">배송비</p>
+                    <p class="product-bill">주문금액</p>
+                </div>
+                </section>
+                <p class="payment-total">
+                <span class="payment-total-text">총 주문금액</span>
+                <span class="payment-total-price">17,500원</span>
+                </p>
+            </section>
+        </article>
+        <article class="payment-middle">
+            <h2 class="sr-only">주문자 정보 및 배송지정보</h2>
+            <section class="payment-info">
+                <h3>배송정보</h3>
+            </section>
+            <section class="payment-user-info">
+                <h4 class="user-info-title"><span>주문자 정보</span></h4>
+                <form>
+                    <div class="user-info-name">
+                        <span>이름</span>
+                        <input type="text">
+                    </div>
+                    <div class="user-info-phone">
+                        <span>휴대폰</span>
+                        <input type="text" maxlength="3">
+                        <span>-</span>
+                        <input type="text" maxlength="4">
+                        <span>-</span>
+                        <input type="text" maxlength="4">
+                    </div>
+                    <div class="user-info-email">
+                        <span>이메일</span>
+                        <input type="email">
+                    </div>
+                </form>
+            </section>
+            <section class="payment-user-place">
+                <h4 class="user-place-title"><span>배송지정보</span></h4>
+                <form>
+                    <div class="user-place-name">
+                        <span>수령인</span>
+                        <input type="text">
+                    </div>
+                    <div class="user-place-phone">
+                        <span>휴대폰</span>
+                        <input type="text" maxlength="3">
+                        <span>-</span>
+                        <input type="text" maxlength="4">
+                        <span>-</span>
+                        <input type="text" maxlength="4">
+                    </div>
+                    <div class="user-place-here">
+                        <div class="user-place-here-home">
+                            <span>배송주소</span>
+                            <div class="user-place-here-home-num">
+                                <input type="text"><button type="submit">우편번호 조회</button>
+                            </div>
+                        </div>
+                        <div class="user-place-here-sub">
+                            <input type="text">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="user-place-message">
+                        <span>배송메시지</span>
+                        <input type="text">
+                    </div>
+                </form>
+            </section>
+        </article>
+        <article class="payment-bottom">
+            <h2 class="sr-only">결제수단 및 결제 정보</h2>
+            <section class="payment-user-credit">
+                <h3>결제수단</h3>
+                <form>
+                    <p class="user-credit-card"><input type="radio"><span>신용/체크카드</span></p>
+                    <p class="user-credit-cash"><input type="radio"><span>무통장 입금</span></p>
+                    <p class="user-credit-phone"><input type="radio"><span>휴대폰 결제</span></p>
+                    <p class="user-credit-naver"><input type="radio"><span>네이버페이</span></p>
+                    <p class="user-credit-kakao"><input type="radio"><span>카카오페이</span></p>
+                </form>
+            </section>
+            <section class="payment-user-total">
+                <h3>최종결제 정보</h3>
+                <div class="payment-user-total-box">
+                    <section class="payment-user-total-top">
+                        <h4 class="sr-only">결제정보 세부내용 및 결제하기</h4>
+                        <section class="user-total-info">
+                            <h5 class="sr-only">결제금액 세부내용</h5>
+                            <div class="user-total-product">
+                                <p class="user-total-price-text">- 상품금액</p>
+                                <p>
+                                    <span class="user-total-price-num">17,500</span>
+                                    <span class="user-total-won">원</span>
+                                </p>
+                            </div>
+                            <div class="user-total-sale">
+                                <p class="user-total-sale-text">- 할인금액</p>
+                                <p>
+                                    <span class="user-total-sale-num">0</span>
+                                    <span class="user-total-won">원</span>
+                                </p>
+                            </div>
+                            <div class="user-total-delevery">
+                                <p class="user-total-delevery-text">- 배송비</p>
+                                <p>
+                                    <span class="user-total-delevery-num">0</span>
+                                    <span class="user-total-won">원</span>
+                                </p>
+                            </div>
+                        </section>
+                        <section class="user-total-price">
+                            <h5 class="sr-only">총 결제금액</h5>
+                            <div>
+                                <p>-결제금액</p>
+                                <p>17,500원</p>
+                            </div>
+                        </section>
+                    </section>
+                    <form class="payment-user-total-bottom">
+                        <div class="user-total-agree">
+                            <input type="checkbox" id="agree">
+                            <label for="agree">주문 내용을 확인하였으면, 정보 제공 등에 동의합니다.</label>
+                        </div>
+                        <button type="submit" class="payment-pay"><span>결제하기</span></button>
+                    </form>
+                </div>
+            </section>
+        </article>
+    </main>
+  </body>
+</html>
