@@ -156,14 +156,28 @@ main .main-top{
 .rolling-banner .rolling-left-arrow{
     position: absolute;
     top: 17vh;
+    bottom: 17vh;
     left: 20px;
+    border: 0;
+    background-color: transparent;
     z-index: 6;
+}
+.rolling-banner .rolling-left-arrow img{
+    position: relative;
+    height: 100%;
 }
 .rolling-banner .rolling-right-arrow{
     position: absolute;
     top: 17vh;
+    bottom: 17vh;
     right: 20px;
+    border: 0;
+    background-color: transparent;
     z-index: 6;
+}
+.rolling-banner .rolling-right-arrow img{
+    position: relative;
+    height: 100%;
 }
 .rolling-banner .rolling-banner-dot{
     position: absolute;
